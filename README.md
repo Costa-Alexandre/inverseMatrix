@@ -137,7 +137,7 @@ When x₁ = 0, then   x₂ = -3
 When x₂ = 0, then -2x₁ = -3  ==> x₁ = 3 / 2
 ```
 
-// TODO: insert image 1
+![Image][1]
 
 From the image above, we see in red all points that satisfy `(ii)`, and in purple all points that satisfy `(i)`. We also see in blue the only point that satisfy both equations, `(2,1)`, which is the solution to our problem. We are going to discuss in the next section why we name this interpretation as the "row problem".
 
@@ -162,7 +162,7 @@ For this next geometrical interpretation, we will look at the columns of `A` and
 
 Now, instead of having a SLE, we have a linear combination of two vectors `c₁ = (2,-2)` and `c₂ = (1,1)`, resulting in the vector `b = (5, -3)`. So, if by adding and scaling c₁ and c₂ we get the vector `b`, than the combinations `x₁` and `x₂` used to scale `c₁` and `c₂`, respectively, are the solution to the problem.
 
-// TODO: insert image 2
+![Image][2]
 
 From the image above, we see in red the vector `c₁`, in purple the vector `c₂` and in blue the vector `b`. It is also possible to notice that (only) when we add `c₁` scaled by `2` and `c₂` (scaled by `1`), we get `b`. As expected, `x₁ = 2` and `x₂ = 1`.
 
@@ -442,7 +442,7 @@ Which is exactly the solution we found before.
 
 We can represent the matrix `A` in a cartesian plan.
 
-// TODO: insert image 3
+![Image][3]
 
 The objective is to find the inverse matrix, which would transform `A` into `I`.
 So, let's try to find a composition of simple matrices that does the same.
@@ -466,7 +466,7 @@ Rotation Matrix
 
 We can find the formula using the unit circle:
 
-// TODO: insert image 4
+![Image][4]
 
 Therefore, for θ = 45° we get:
 
@@ -475,7 +475,7 @@ Therefore, for θ = 45° we get:
 | √2/2   √2/2 |
 ```
 
-// TODO: insert image 5
+![Image][5]
 
 Now, we need to transform `c₁` and `c₂` into _Unit Vectors_. As we know, _Unit Vectors_ have length equal `1`. The way to to do it is by scaling each vector by `1/||c₁||` and `1/||c₂||`, respectively.
 
@@ -517,7 +517,7 @@ The transformation matrix that scales `c₁` and `c₂` by `√2/4` and `√2/2`
 |   0  √2/2 |
 ```
 
-//TODO: insert image 6
+![Image][6]
 
 As we intended, we found a matrix composition that when applied to `A` transform it into `I`. It is:
 
@@ -588,3 +588,10 @@ A = |  2  1 |    ==>  swap A₁₁ and A₂₂           ==> | 1/4 -1/4 | = | 1/
     | -2  1 |         change signal A₁₂ and A₂₁      | 2/4  2/4 |   | 1/2  1/2 |
                       divide by det(A)
 ```
+
+[1]: image1.png
+[2]: image2.png
+[3]: image3.png
+[4]: image4.png
+[5]: image5.png
+[6]: image6.png
